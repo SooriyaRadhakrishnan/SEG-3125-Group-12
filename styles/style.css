@@ -1,9 +1,8 @@
-html {
-  background-color: white;
-}
-
-body {
-  background-color: white;
+html, body {
+  font-family: 'Arial', sans-serif;
+  background-color: whitesmoke;
+  color: #333;
+  line-height: 1.6;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -15,21 +14,23 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: grey;
+  color:  #555;
 }
 
 h2 {
   font-size: 45px;
-  font-family: Calibri;
+  font-family: 'Calibri', sans-serif;
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: black;
+  color: #333;
 }
 
 img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 p {
@@ -39,14 +40,18 @@ p {
 table {
   border: 1px solid white;
   background-color: #f1f1c1;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 /* Defining styling for a specific element type - each question */
 .question {
   background-color: white;
-  color: black;
+  color: #333;
   margin: 20px;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -62,6 +67,12 @@ table {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.block:hover {
+  background-color: #ffc107; 
 }
 
 /* Defining styling for a specific element with an id */
