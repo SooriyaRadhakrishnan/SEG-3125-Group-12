@@ -3,21 +3,32 @@ html {
   }
    
   body {
-    background-color: powderblue;
-    width: 600px;
-    border: 2px solid black;
-    padding: 0px 20px 20px 20px;
+    background-color: white;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     
   }
   
   h1 {
       font-size: 60px;
+      font-family: sans-serif;
       text-align: center;
       margin: 0;
       padding: 20px 0;
-      color: #ff00ff;  /* Fuchsia */
-      text-shadow: 3px 3px 1px black;
+      color: grey;  
+   
   }
+
+  h2 {
+    font-size: 45px;
+    font-family: Calibri
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: black;  
+ 
+}
   
   img {
     display: block;
@@ -26,18 +37,18 @@ html {
   }
   
   p {
-    color: red;
+    color: black;
   }
   
   table {
-      border: 1px solid black;
+      border: 1px solid white;
       background-color: #f1f1c1;
   }
   
   /* Defining styling for a specific element type - each question */
   .question {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin: 20px;
     padding: 20px;
   }
