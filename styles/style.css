@@ -1,74 +1,73 @@
 html {
-    background-color: white;
-  }
-   
-  body {
-    background-color: white;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    
-  }
-  
-  h1 {
-      font-size: 60px;
-      font-family: sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 20px 0;
-      color: grey;  
-   
-  }
-
-  h2 {
-    font-size: 45px;
-    font-family: Calibri
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: black;  
- 
+  background-color: white;
 }
-  
-  img {
-    display: block;
-    margin: 0 auto;
-    align: center;
-  }
-  
-  p {
-    color: black;
-  }
-  
-  table {
-      border: 1px solid white;
-      background-color: #f1f1c1;
-  }
-  
-  /* Defining styling for a specific element type - each question */
-  .question {
-    background-color: white;
-    color: black;
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  /* Defining styling for a specific element type - large block buttons */
-  .block {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #ffff66;  /* yellow */
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  /* Defining styling for a specific element with an id */
-  #signature {
-    text-align: right;
-    color: red;
-    font-style: italic;
-    font-size: 75%;
-  }
+
+body {
+  background-color: white;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: grey;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: Calibri;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  color: black;
+}
+
+table {
+  border: 1px solid white;
+  background-color: #f1f1c1;
+}
+
+/* Defining styling for a specific element type - each question */
+.question {
+  background-color: white;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Defining styling for a specific element type - large block buttons */
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffff66; /* yellow */
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Defining styling for a specific element with an id */
+#signature {
+  text-align: right;
+  color: red;
+  font-style: italic;
+  font-size: 75%;
+}
