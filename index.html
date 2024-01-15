@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Questionnaire</title>
+  </head>
+  
+  <body>
+	<h1>Survey</h1>
+	<form id="myform" action="index.php" >
+	<br>
+	<br>
+	<! Choose a website to evaluate >
+	<h3><i>This is a terribly ugly page... please modify it!</i></h3>
+	<h2>What are your thoughts on the new iPhone 15? <a href="https://www.apple.com/ca/">Apple</a> site?</h2>	
+	<br>
+	<br>
+	<! You should make your image clickable>
+	<img src="images/Apple Image.png" alt="https://www.apple.com/ca/" href="https://www.apple.com/ca/" width="450" height="300">
+	<br>
+	<br>
+	<div class="question">
+	<h2> What is the model of your current phone?</h2>
+	<p>Model: <input type="text" name="model"></p>
+	<br>
+	<br>
+		
+	</div>	
+		
+	<div class="question">
+		<h2> which Apple products do you own? </h2>
+		I own:<br>
+		<input type="checkbox" name="Product" value="iPhone">iPhone<br>
+		<input type="checkbox" name="Product" value="iPad">iPad<br>
+		<input type="checkbox" name="Product" value="MacBook">MacBook<br>
+        <input type="checkbox" name="Product" value="Airpods">Airpods<br>
+	
+		<br>
+		<br>
+
+		<h2>How much money would you spend on a new Apple product?</h2>
+		<select id="budget">
+			<option value="0 - 299" selected="selected">$0 - $299</option>
+			<option value="300 - 699">$300 - $699</option>
+			<option value="700+">$700+</option>
+		</select>
+
+        <br>
+        <br>
+        
+        <h2>Which type of smartphone OS do you prefer?</h2>
+        <input type = "radio" name="type" value="iOS">iOS <br>
+        <input type = "radio" name="type" value="Andriod"> Andriod <br>
+        
+	</div>
+	
+	<br>
+	<br>
+		
+	Comments:<br>
+	<textarea rows="5" cols="30"></textarea>
+			
+	<br>
+	<br>
+			
+	<button id="submitButton" type="button" class="block">
+		SUBMIT your questionnaire
+	</button>
+		
+	<p id="signature">Site Created by Group 12, Arthur Wang, Kaitlyn Wong, Harman Sekhon, Sooriya Radhakrishnan </p>	
+	
+	</form>
+  </body>
+</html> 
