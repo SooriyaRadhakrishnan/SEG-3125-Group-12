@@ -26,9 +26,11 @@
         <h3>Client Information</h3>
         <p>Tell us a bit about you.</p>
         Tell us About Your Diet Preferences:
-        <div class="text"><input type="checkbox" name="Product" value="Vegetarian"> Vegetarian <br></div>
-        <div class="text"><input type="checkbox" name="Product" value="GlutenFree"> Gluten Free<br></div>
-        <div class="text"><input type="checkbox" name="Product" value="None"> None<br></div>
+        
+            <div class><input type="checkbox" id="Vegetarian" name="Product" value="Vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')"> Vegetarian <br></div>
+            <div class><input type="checkbox" id="GlutenFree" name="Product" value="GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')"> Gluten Free<br></div>
+            <div class><input type="checkbox" id="None" name="Product" value="None" onchange="populateListProductChoices(this.id, 'displayProduct')"> None<br></div>
+        </select>   
     </div>
 
     <div id="Products" class="tabcontent">
