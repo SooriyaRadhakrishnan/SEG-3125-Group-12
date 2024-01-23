@@ -103,13 +103,20 @@ var products = [
   },
 ];
 
+function compareByPrice(p1, p2){
+	return p1.price - p2.price;
+}
+
+products.sort(compareByPrice);
+
+console.log(products);
+
+
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-
 function restrictListProducts(prods, restriction, organic) {
   let product_names = [];
-  //console.log(organic);
   for (let i = 0; i < prods.length; i += 1) {
 	if (prods[i].organic && organic == "NonOrganic"){
 		continue
@@ -120,7 +127,9 @@ function restrictListProducts(prods, restriction, organic) {
       product_names.push(prods[i].name);
     } else if (restriction == "GlutenFree" && prods[i].glutenFree == true) {
       product_names.push(prods[i].name);
-    } else if (restriction == "None") {
+	} else if((restriction == "GFVeg") && (prods[i].glutenFree == true) && (prods[i].vegetarian == true)){
+		product_names.push(prods[i].name);
+	}else if (restriction == "None") {
       product_names.push(prods[i].name);
     }
 
