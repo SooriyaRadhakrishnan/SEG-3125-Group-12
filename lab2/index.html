@@ -25,12 +25,14 @@
     <div id="Client" class="tabcontent">
         <h3>Client Information</h3>
         <p>Tell us a bit about you.</p>
-        Tell us About Your Diet Preferences:
-        
-            <div class><input type="checkbox" id="Vegetarian" name="Product" value="Vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')"> Vegetarian <br></div>
-            <div class><input type="checkbox" id="GlutenFree" name="Product" value="GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')"> Gluten Free<br></div>
-            <div class><input type="checkbox" id="None" name="Product" value="None" onchange="populateListProductChoices(this.id, 'displayProduct')"> None<br></div>
-        </select>   
+        Tell us About Your Diet Preferences: 
+            <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+            <option value=""></option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="GlutenFree">Gluten Free</option>
+            <option value="GFVeg">Gluten Free & Vegetarian</option>
+            <option value="None">None</option>
+            </select>
     </div>
 
     <div id="Products" class="tabcontent">
