@@ -25,23 +25,24 @@
     <div id="Client" class="tabcontent">
         <h3>Client Information</h3>
         <p>Tell us a bit about you.</p>
-        Tell us About Your Diet Preferences: 
+        Tell us About Your Diet Preferences:
 
         <br><br>
-        
+
         Choose a Diet Category:
-            <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+        <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
             <option value=""></option>
             <option value="Vegetarian">Vegetarian</option>
             <option value="GlutenFree">Gluten Free</option>
             <option value="GFVeg">Gluten Free & Vegetarian</option>
             <option value="None">None</option>
         </select>
-    
+
         <br><br>
-    
+
         Choose an Organic Category:
-        <select id="organicSelect" name="organicSelect" onchange="populateListProductChoices('dietSelect', 'displayProduct')">
+        <select id="organicSelect" name="organicSelect"
+            onchange="populateListProductChoices('dietSelect', 'displayProduct')">
             <option value=""></option>
             <option value="Organic">Organic</option>
             <option value="NonOrganic">Non-Organic</option>
@@ -70,5 +71,9 @@
     <script src="scripts/main.js"></script>
 
 </body>
+<div class="foot">
+    <p id="signature">Site Created by Group 12, Arthur Wang, Kaitlyn Wong, Harman Sekhon, Sooriya Radhakrishnan
+    </p>
+</div>
 
 </html>

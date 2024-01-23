@@ -3,63 +3,63 @@
 
 var products = [
   {
-    name: "corn",
+    name: "Corn",
     vegetarian: true,
     glutenFree: true,
     organic: true,
     price: 0.99,
   },
   {
-    name: "frozen chicken broccoli cheese cutlet",
+    name: "Frozen Chicken Broccoli Cheese Cutlet",
     vegetarian: false,
     glutenFree: false,
     organic: false,
     price: 15.0,
   },
   {
-    name: "frozen alaskan sole",
+    name: "Frozen Alaskan Sole",
     vegetarian: false,
     glutenFree: true,
     organic: true,
     price: 20.99,
   },
   {
-    name: "peanut butter (2kg)",
+    name: "Peanut Butter (2kg)",
     vegetarian: true,
     glutenFree: true,
     organic: false,
     price: 10.88,
   },
   {
-    name: "jam",
+    name: "Jam",
     vegetarian: true,
     glutenFree: true,
     organic: false,
     price: 5.99,
   },
   {
-    name: "spring mix",
+    name: "Spring Mix",
     vegetarian: true,
     glutenFree: true,
     organic: true,
     price: 3.99,
   },
   {
-    name: "frozen buffalo chicken wings",
+    name: "Frozen Buffalo Chicken Wings",
     vegetarian: false,
     glutenFree: false,
     organic: false,
     price: 20.0,
   },
   {
-    name: "blueberry muffins",
+    name: "Blueberry Muffins",
     vegetarian: true,
     glutenFree: false,
     organic: false,
     price: 9.99,
   },
   {
-    name: "chicken breasts",
+    name: "Chicken Breasts",
     vegetarian: false,
     glutenFree: true,
     organic: true,
@@ -67,35 +67,35 @@ var products = [
     price: 30.0,
   },
   {
-    name: "panini ham",
+    name: "Panini Ham",
     vegetarian: false,
     glutenFree: true,
     organic: false,
     price: 9.99,
   },
   {
-    name: "rotisserie chicken",
+    name: "Rotisserie Chicken",
     vegetarian: false,
     glutenFree: true,
     organic: true,
     price: 7.99,
   },
   {
-    name: "broccoli",
+    name: "Broccoli",
     vegetarian: true,
     glutenFree: true,
     organic: true,
     price: 1.99,
   },
   {
-    name: "bread",
+    name: "Bread",
     vegetarian: true,
     glutenFree: false,
     organic: true,
     price: 2.35,
   },
   {
-    name: "salmon",
+    name: "Salmon",
     vegetarian: false,
     glutenFree: true,
     organic: true,
@@ -103,13 +103,11 @@ var products = [
   },
 ];
 
-function compareByPrice(p1, p2){
-	return p1.price - p2.price;
+function compareByPrice(p1, p2) {
+  return p1.price - p2.price;
 }
 
 products.sort(compareByPrice);
-
-console.log(products);
 
 
 // given restrictions provided, make a reduced list of products
@@ -118,22 +116,23 @@ console.log(products);
 function restrictListProducts(prods, restriction, organic) {
   let product_names = [];
   for (let i = 0; i < prods.length; i += 1) {
-	if (prods[i].organic && organic == "NonOrganic"){
-		continue
-	} else if (!prods[i].organic && organic == "Organic"){
-		continue
-	}
+    if (prods[i].organic && organic == "NonOrganic") {
+      continue
+    } else if (!prods[i].organic && organic == "Organic") {
+      continue
+    }
     if (restriction == "Vegetarian" && prods[i].vegetarian == true) {
-      product_names.push(prods[i].name);
+      product_names.push(prods[i]);
     } else if (restriction == "GlutenFree" && prods[i].glutenFree == true) {
-      product_names.push(prods[i].name);
-	} else if((restriction == "GFVeg") && (prods[i].glutenFree == true) && (prods[i].vegetarian == true)){
-		product_names.push(prods[i].name);
-	}else if (restriction == "None") {
-      product_names.push(prods[i].name);
+      product_names.push(prods[i]);
+    } else if ((restriction == "GFVeg") && (prods[i].glutenFree == true) && (prods[i].vegetarian == true)) {
+      product_names.push(prods[i]);
+    } else if (restriction == "None") {
+      product_names.push(prods[i]);
     }
 
   }
+  console.log(product_names)
   return product_names;
 }
 
@@ -146,4 +145,14 @@ function getTotalPrice(chosenProducts) {
     }
   }
   return totalPrice;
+}
+
+
+function getProductPriceByName(name) {
+  try {
+    return products.filter((element) => { return name === element['name'] })[0].price;
+  }
+  catch {
+    return 0;
+  }
 }
