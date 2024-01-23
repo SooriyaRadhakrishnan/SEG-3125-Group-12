@@ -3,6 +3,72 @@
 // A set of ingredients should be added to products		 
 
 var products = [
+    {
+		name: "corn",
+		vegetarian: true,
+		glutenFree: true,
+		price: 0.99
+	},
+    {
+		name: "frozen chicken broccoli cheese cutlet",
+		vegetarian: false,
+		glutenFree: false,
+		price: 15.00
+	},  
+    {
+		name: "frozen alaskan sole",
+		vegetarian: false,
+		glutenFree: true,
+		price: 20.99
+	},
+    {
+		name: "peanut butter (2kg)",
+		vegetarian: true,
+		glutenFree: true,
+		price: 10.88
+	},
+    {
+		name: "jam",
+		vegetarian: true,
+		glutenFree: true,
+		price: 5.99
+	},
+    {
+		name: "spring mix",
+		vegetarian: true,
+		glutenFree: true,
+		price: 3.99
+	},
+    {
+		name: "frozen buffalo chicken wings",
+		vegetarian: false,
+		glutenFree: false,
+		price: 20.00
+	},
+    {
+		name: "blueberry muffins",
+		vegetarian: true,
+		glutenFree: false,
+		price: 9.99
+	},
+    {
+		name: "chicken breasts",
+		vegetarian: false,
+		glutenFree: true,
+		price: 30.00
+	},
+    {
+		name: "panini ham",
+		vegetarian: false,
+		glutenFree: true,
+		price: 9.99
+	},
+    {
+		name: "rotisserie chicken",
+		vegetarian: false,
+		glutenFree: true,
+		price: 7.99
+	},
 	{
 		name: "brocoli",
 		vegetarian: true,
