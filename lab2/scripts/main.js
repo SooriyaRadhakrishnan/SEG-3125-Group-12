@@ -30,12 +30,13 @@ function openInfo(evt, tabName) {
 function populateListProductChoices(slct1, slct2) {
     var s1 = document.getElementById(slct1);
     var s2 = document.getElementById(slct2);
+	var organic = document.getElementById("organicSelect");
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
 		
 	// obtain a reduced list of products based on restrictions
-    var optionArray = restrictListProducts(products, s1.value);
+    var optionArray = restrictListProducts(products, s1.value, organic.value);
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
@@ -91,3 +92,5 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 		
 }
+
+
