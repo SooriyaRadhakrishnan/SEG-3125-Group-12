@@ -12,11 +12,11 @@
     </h1>
 </div>
 
-<body>
+<body onload="openInfo(event, 'Client')">
 
     <!-- Tab links, each one with an onclick event associated with it -->
     <div class="tab">
-        <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+        <button class="tablinks active active" onclick="openInfo(event, 'Client')">Client</button>
         <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
         <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
     </div>
