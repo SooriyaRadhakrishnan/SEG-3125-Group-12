@@ -88,7 +88,14 @@ var products = [
 		price: 10.00
 	}
 ];
-	
+
+function compareByPrice(p1, p2){
+	return p1.price - p2.price;
+}
+
+products.sort(compareByPrice);
+
+console.log(products);
 
 
 // given restrictions provided, make a reduced list of products
